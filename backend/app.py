@@ -36,3 +36,6 @@ async def audio_ws(ws: WebSocket):
         voice = tts_model.synthesize(reply)
 
         await ws.send_bytes(voice)
+
+
+
